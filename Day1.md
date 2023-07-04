@@ -11,7 +11,10 @@ document.title --> to get the title of this page
 ## Values & Data Types
  The different values and data types used in JavaScript, including how to tell the type difference between "24" and 24. Primitive data types include string, number, boolean, undefined, null, bigint, and symbol.
  ### values : 
- chunks of information we want to wark with 
+ chunks of information we want to wark with.
+ ###### JS has two kinds of data:
+-Primitive types (strings, numbers, boolean , undefined, null )
+-objects (document & friends..)
  
 ## Operators
  
