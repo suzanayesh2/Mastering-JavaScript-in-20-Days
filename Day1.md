@@ -17,4 +17,4 @@ document.title --> to get the title of this page
 - Objects (document & friends..)
  
 ## Operators
- 
+  The various operators and the different effects they can have on values in JavaScript. In JavaScript, Arithmetic operators respect the order of operations and can be grouped using parenthesis.
