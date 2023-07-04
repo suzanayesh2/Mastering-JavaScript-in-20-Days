@@ -13,8 +13,8 @@ document.title --> to get the title of this page
  ### values : 
  chunks of information we want to wark with.
  ###### JS has two kinds of data:
--Primitive types (strings, numbers, boolean , undefined, null )
--objects (document & friends..)
+- Primitive types (strings, numbers, boolean , undefined, null )
+- Objects (document & friends..)
  
 ## Operators
  
