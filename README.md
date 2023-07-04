@@ -17,3 +17,22 @@ In this challenge, you will enhance your JavaScript skills and knowledge. Each d
 #### Coding Challenges in Day 1
  - [First Challenge](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
  - [Second Challenge](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-division)
+
+## Daily Learning Process
+1. Each day, you will watch 90 minutes of the assigned courses listed above.
+2. Solve all the JavaScript coding challenges that will be provided by the GSG team.
+3. Summarize your daily learning and document your challenge solutions on a separate readme page.
+4. Repeat the process for the next 20 days, gradually advancing your JavaScript skills.
+
+
+
+## Guidelines
+- Commit to a consistent schedule and allocate sufficient time each day to complete the learning activities.
+- Take notes, document your progress, and maintain a personal learning log throughout the challenge.
+- Experiment, explore, and don't be afraid to make mistakes. Learning comes from both successes and failures.
+- Engage with the other GSG trainees. Seek support, share insights, and collaborate with fellow learners using the dedicated discussion telegram channel.
+- Celebrate your achievements and reflect on your growth throughout the challenge.
+
+## Folder Structure
+-  [**Day 1**](https://github.com/ramisalman1/JavaScriptLearningSprint/blob/main/Day1.md)
+
