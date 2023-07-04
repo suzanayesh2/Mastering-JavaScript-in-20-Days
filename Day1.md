@@ -6,7 +6,7 @@ The DOM (Document object model)represents the structure of a document as a tree 
 simple Dom tree : 
 
 ![dom](https://github.com/suzanayesh2/Mastering-JavaScript-in-20-Days/assets/138245896/886b6eb6-f808-48e7-b497-d2a48677c5f4)
-Exapmle : 
+Example : when you write in console (inspect)
 document.title --> to get the title of this page
 ## Values & Data Types
  The different values and data types used in JavaScript, including how to tell the type difference between "24" and 24. Primitive data types include string, number, boolean, undefined, null, bigint, and symbol.
