@@ -5,7 +5,7 @@
 - Events in JavaScript are how we can make our web-pages interactive
 
 ## Conditionals
-
+Contionals mean using if and else statements to execute code only under the specified conditions. The if statement executes a statement if a specified condition is truthy; if it evaluates to falsy, the else clause will instead be executed
 ## Map & filter
 
 ## Doggos Quiz Game
