@@ -17,3 +17,5 @@ Contionals mean using if and else statements to execute code only under the spec
     console.log(...skills);
 ```
 ## Doggos Quiz Game
+
+Asynchronous refers to code that allows a program to have a task be performed alongside the original task (or tasks) without stopping to wait for the task to complete.
