@@ -9,6 +9,8 @@
  Destructuring as a method to declare multiple variables at once by retrieving the values from the parent object. Altering the destructuring syntax to use square brackets allows the destructuring of arrays
 
 ## Async
+An asynchronous function is a special type of function that allows you to write asynchronous code using await expressions.
+
 
 ## Modules
 
