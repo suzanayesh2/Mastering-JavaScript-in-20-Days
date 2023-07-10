@@ -10,5 +10,10 @@ Contionals mean using if and else statements to execute code only under the spec
  - Filter method : to process an array for specified data and the 
  - Map method : to call a function on each item and create a new array.
 - Instead of looping over an array for each item, the spread operator can also be used.
-
+```javascript
+    const skills = ["HTML", "CSS", "JS"];
+    const newSkills = ["React", "TypeScript", "Node"]
+    skills.push(...newSkills);
+    console.log(...skills);
+```
 ## Doggos Quiz Game
