@@ -19,7 +19,8 @@ scope to the outside world
 -import lets us use an exposed variable from
 another module
 - Error Handling by try catch
-  ```JavaScript
+```javascript
+
 try {
     thisMightThrowAnError();
 } catch (error) {
@@ -27,7 +28,5 @@ try {
     console.log("Whatever, let's press on anyway");
 }
 console.log("still rollin' with the homies");
-
-
-   ```
+```
 ## Wrapping up
