@@ -13,5 +13,5 @@ An asynchronous function is a special type of function that allows you to write 
 
 
 ## Modules
-
+ Modules are a way to organize and encapsulate code. They allow you to split your code into separate files and control the visibility of variables and functions within those files
 ## Wrapping up
