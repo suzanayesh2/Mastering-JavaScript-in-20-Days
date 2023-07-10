@@ -29,4 +29,3 @@ try {
 }
 console.log("still rollin' with the homies");
 ```
-## Wrapping up
