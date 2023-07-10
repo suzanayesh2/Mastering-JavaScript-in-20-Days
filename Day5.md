@@ -13,5 +13,21 @@ An asynchronous function is a special type of function that allows you to write 
 
 
 ## Modules
- Modules are a way to organize and encapsulate code. They allow you to split your code into separate files and control the visibility of variables and functions within those files
+- Modules are a way to organize and encapsulate code. They allow you to split your code into separate files and control the visibility of variables and functions within those files.
+- export lets us expose variables from our module's
+scope to the outside world
+-import lets us use an exposed variable from
+another module
+- Error Handling by try catch
+  ``` javascript
+try {
+    thisMightThrowAnError();
+} catch (error) {
+    console.error("As if! Error:", error); 
+    console.log("Whatever, let's press on anyway");
+}
+console.log("still rollin' with the homies");
+
+
+   ```
 ## Wrapping up
