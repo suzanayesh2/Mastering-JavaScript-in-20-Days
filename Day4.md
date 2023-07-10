@@ -9,4 +9,6 @@ Contionals mean using if and else statements to execute code only under the spec
 ## Map & filter
  - Filter method : to process an array for specified data and the 
  - Map method : to call a function on each item and create a new array.
+- Instead of looping over an array for each item, the spread operator can also be used.
+
 ## Doggos Quiz Game
