@@ -6,6 +6,8 @@
 - The Promise we get it from fetch that resolve to a Response object or Rejected or fulfilled.
 ## Destructuring Data
 
+ Destructuring as a method to declare multiple variables at once by retrieving the values from the parent object. Altering the destructuring syntax to use square brackets allows the destructuring of arrays
+
 ## Async
 
 ## Modules
