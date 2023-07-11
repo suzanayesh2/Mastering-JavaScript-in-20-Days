@@ -18,4 +18,18 @@ document.title --> to get the title of this page
 - Objects (document & friends..)
  
 ## Operators
-  The various operators and the different effects they can have on values in JavaScript. In JavaScript, Arithmetic operators respect the order of operations and can be grouped using parenthesis.
+ - The various operators and the different effects they can have on values in JavaScript. In JavaScript, Arithmetic operators respect the order of operations and can be grouped using parenthesis.
+-  ===, == ,*, %, !==,+,-,,> , <
+
+## Coding Exercises
+[Compound Assignment With Augmented Multiplication](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
+
+```javascript
+let a = 5;
+let b = 12;
+let c = 4.6;
+
+a *= 5;
+b *= 3;
+c *= 10;
+```
