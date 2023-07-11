@@ -5,6 +5,16 @@ In summary, JavaScript is a powerful and flexible programming language that enab
 ## DOM :
 The DOM (Document object model)represents the structure of a document as a tree , its a way to interact developer with web page .
 simple Dom tree : 
+## Coding Exercise
+[Concatenating Strings with the Plus Equals Operatorhttps://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/concatenating-strings-with-the-plus-equals-operator)
+### My solution
+```javascript
+let myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+
+console.log(myStr);
+
+```
 
 ![dom](https://github.com/suzanayesh2/Mastering-JavaScript-in-20-Days/assets/138245896/886b6eb6-f808-48e7-b497-d2a48677c5f4)
 Example : when you write in console (inspect)
@@ -21,7 +31,7 @@ document.title --> to get the title of this page
  - The various operators and the different effects they can have on values in JavaScript. In JavaScript, Arithmetic operators respect the order of operations and can be grouped using parenthesis.
 -  ===, == ,*, %, !==,+,-,,> , <
 
-## Coding Exercises
+## Coding Exercise
 [Compound Assignment With Augmented Multiplication](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
 ### My solution
 ```javascript
