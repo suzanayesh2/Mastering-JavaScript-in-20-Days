@@ -1,4 +1,5 @@
 # Day1 :
+Those lessons to describe javascript :[Frontend Masters course “JavaScript First Steps"](https://frontendmasters.com/workshops/javascript-first-steps/) 
 ## introduction :
 In summary, JavaScript is a powerful and flexible programming language that enables developers to create interactive and dynamic web pages.
 ## DOM :
