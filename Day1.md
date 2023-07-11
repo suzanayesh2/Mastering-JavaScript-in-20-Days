@@ -23,7 +23,7 @@ document.title --> to get the title of this page
 
 ## Coding Exercises
 [Compound Assignment With Augmented Multiplication](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/compound-assignment-with-augmented-multiplication)
-
+### My solution
 ```javascript
 let a = 5;
 let b = 12;
