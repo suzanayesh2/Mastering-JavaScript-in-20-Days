@@ -21,6 +21,15 @@ Example : when you write in console (inspect)
 document.title --> to get the title of this page
 ## Values & Data Types
  The different values and data types used in JavaScript, including how to tell the type difference between "24" and 24. Primitive data types include string, number, boolean, undefined, null, bigint, and symbol.
+ [Find the Nth-to-Last Character in a String](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-bracket-notation-to-find-the-nth-to-last-character-in-a-string)
+### My solution
+ ```javascript
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length-2]; // Change this line
+```
  ### values : 
  chunks of information we want to wark with.
  ###### JS has two kinds of data:
