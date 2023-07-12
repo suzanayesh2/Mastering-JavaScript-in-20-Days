@@ -53,3 +53,19 @@ myLocalScope();
 console.log('outside myLocalScope', myVar);
 
 ```
+- [Global vs. Local Scope in Functions
+](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/global-vs--local-scope-in-functions)
+### My Solution
+```javascript
+// Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+const outerWear="sweater";
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
+```
