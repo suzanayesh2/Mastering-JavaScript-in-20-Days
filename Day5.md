@@ -30,7 +30,7 @@ try {
 console.log("still rollin' with the homies");
 ```
 ## Coding Exercise
-[ Rick and Morty API](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week1-day5-task/task.md)
+[ Rick and Morty API](https://github.com/suzanayesh2/Mastering-JavaScript-in-20-Days/tree/main/Day5Code)
 ### My Soltion
 ```javascript
 const Url = "https://rickandmortyapi.com/api/character";
