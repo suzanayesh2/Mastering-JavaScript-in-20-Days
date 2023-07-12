@@ -69,3 +69,24 @@ const outerWear="sweater";
 
 myOutfit();
 ```
+- [Stand in Line](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/stand-in-line)
+
+### My Solution
+```javascript
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item); // Add the item to the end of the array
+  var removedItem = arr.shift(); // Remove the first element from the array
+  return removedItem; // Return the removed element
+  // Only change code above this line
+}
+
+// Setup
+let testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+```
