@@ -33,3 +33,40 @@ console.log(checkSign(-12)); // Output: "negative"
 console.log(checkSign(0)); // Output: "zero"
 
 ```
+- [Golf Code
+](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/golf-code)
+### My solution
+
+```javascript
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  if (strokes === 1) {
+    return names[0]; // "Hole-in-one!"
+  } else if (strokes <= par - 2) {
+    return names[1]; // "Eagle"
+  } else if (strokes === par - 1) {
+    return names[2]; // "Birdie"
+  } else if (strokes === par) {
+    return names[3]; // "Par"
+  } else if (strokes === par + 1) {
+    return names[4]; // "Bogey"
+  } else if (strokes === par + 2) {
+    return names[5]; // "Double Bogey"
+  } else {
+    return names[6]; // "Go Home!"
+  }
+}
+
+console.log(golfScore(4, 2)); // Output: "Eagle"
+console.log(golfScore(5, 2)); // Output: "Eagle"
+console.log(golfScore(4, 3)); // Output: "Birdie"
+console.log(golfScore(4, 4)); // Output: "Par"
+console.log(golfScore(1, 1)); // Output: "Hole-in-one!"
+console.log(golfScore(5, 5)); // Output: "Par"
+console.log(golfScore(4, 5)); // Output: "Bogey"
+console.log(golfScore(4, 6)); // Output: "Double Bogey"
+console.log(golfScore(4, 7)); // Output: "Go Home!"
+console.log(golfScore(5, 9)); // Output: "Go Home!"
+
+```
