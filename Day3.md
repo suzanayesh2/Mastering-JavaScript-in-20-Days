@@ -90,3 +90,16 @@ console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
 
 ```
+- [Use Multiple Conditional (Ternary) Operators
+](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
+### My solution
+```javascript
+function checkSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+}
+
+console.log(checkSign(10)); // Output: "positive"
+console.log(checkSign(-12)); // Output: "negative"
+console.log(checkSign(0)); // Output: "zero"
+
+```
