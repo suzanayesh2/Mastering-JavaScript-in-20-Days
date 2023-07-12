@@ -19,3 +19,17 @@ Contionals mean using if and else statements to execute code only under the spec
 ## Doggos Quiz Game
 
 Asynchronous refers to code that allows a program to have a task be performed alongside the original task (or tasks) without stopping to wait for the task to complete.
+## Coding Exercises
+- [Use Multiple Conditional (Ternary) Operators
+](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/use-multiple-conditional-ternary-operators)
+### My solution
+```javascript
+function checkSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+}
+
+console.log(checkSign(10)); // Output: "positive"
+console.log(checkSign(-12)); // Output: "negative"
+console.log(checkSign(0)); // Output: "zero"
+
+```
