@@ -39,7 +39,7 @@ function fun2() {
 ```
 - [Local Scope and Functions
 ](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/local-scope-and-functions)
-
+### My Solution
 ```javascript
 function myLocalScope() {
   // Only change code below this line
