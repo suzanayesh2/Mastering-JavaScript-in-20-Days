@@ -31,7 +31,7 @@ console.log("still rollin' with the homies");
 ```
 ## Coding Exercise
 [ Rick and Morty API](https://github.com/suzanayesh2/Mastering-JavaScript-in-20-Days/tree/main/Day5Code)
-### My Soltion
+### My Solution
 ```javascript
 const Url = "https://rickandmortyapi.com/api/character";
 
