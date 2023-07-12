@@ -44,8 +44,8 @@ for (let i = 0; i < body.results.length; i++) {
 const newlist = document.createElement("li");
 const newContent = document.createTextNode(body.results[i].name);
 newlist.appendChild(newContent);
-const currentUl = document.getElementById("characterList");
-document.body.insertBefore(newlist, currentUl);
+const charList = document.getElementById("character List");
+document.body.insertBefore(newlist, charList);
     };
   }
  } catch (error) {
