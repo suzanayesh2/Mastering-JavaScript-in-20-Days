@@ -6,7 +6,7 @@
 ## Objects
 In JavaScript, objects are one of the fundamental data types and are used to store collections of key-value pairs
 ## Coding Exercises
-[Profile Lookup](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup)
+- [Profile Lookup](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup)
 ### My solution
 ```javascript
 //Setup
@@ -51,4 +51,19 @@ function lookUpProfile(name, prop){
 var data = lookUpProfile("Sherlock", "hello");
 
 console.log(data);
+```
+
+- [Copy Array Items Using slice()](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-data-structures/copy-array-items-using-slice)
+### My Solution
+```javascript
+function forecast(arr) {
+  // Only change code below this line
+  var todaysWeather = arr.slice(2, 4);
+  return todaysWeather;
+}
+
+// Only change code above this line
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+
 ```
