@@ -1,3 +1,4 @@
+
 # Day 2: Closures
 ### Clouser : 
 * is the most esoteric of js concepts.
