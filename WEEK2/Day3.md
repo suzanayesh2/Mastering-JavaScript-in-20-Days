@@ -1,4 +1,20 @@
 # DAY3 : Async JavaScript, Promises
+## Lesson summary :
+
+- Promises the most signficate ES6 feature
+-  Async the feature that makes dynamic web app possible the event loop - js triage,
+microtask queue, callback queue and web broweser featiures (APIS) 
+
+
+- Our core JS engine has 3 main parts : 
+  * Thread of exection
+  * Memory /variable environment
+  * Call stack
+- We need to add some new components:
+  * Web Browser APIs/Node background APIs
+  * Promises
+  * Event loop, Callback/Task queue and micro task queue
+- The key features that the browser provides. To interact with the features that the browser offers, JavaScript offers "facade functions" that look like JavaScript, but are actually part of the browser. Examples of these functions include console, fetch, document, and setTimeout.
 
 
 ### CODE EXRCISES:
