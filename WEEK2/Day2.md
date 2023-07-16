@@ -6,8 +6,13 @@
 * many js design patterns including the module pattern use closure 
 * Build iterators, handle partial appliction and maintain state in an asynchronous world
 ### Questions Code :
-#### Question 1 :
+
+#### Question 1: Functions and Callbacks
+Implement a JavaScript function called mapAsync that takes an array and a callback function. The function should map each element of the array to a new value using the callback function asynchronously.
+
+The final result should be returned as a Promise.
 *Some Help from ChatGPT*
+
 ```javascript
 function mapAsync(array, callback) {
   return new Promise((resolve, reject) => {
