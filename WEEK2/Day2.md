@@ -54,4 +54,17 @@ doubledArray
 #### Question 2 :
 Question 2: Call Stack and Recursion
 Write a JavaScript function called sumRange that calculates the sum of all integers in a given range. The function should use recursion to handle the calculation and demonstrate understanding of the call stack.
+```javasript
+function sumRange(start, end) {
+  if (start === end) {
+    return start;
+  } else {
+    return start + sumRange(start + 1, end);
+  }
+}
 
+// Example usage:
+const result = sumRange(1, 5);
+console.log(result); // Output: 15 (1 + 2 + 3 + 4 + 5 = 15)
+
+```
