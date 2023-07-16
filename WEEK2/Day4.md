@@ -16,4 +16,4 @@
   * we can use the hasOwnProperty method - but where is it ? is it on user 2? 
   * All objects have a__proto__ property by default which defults to linking to a big object -Object.prototype full of (somewhat) useful functions 
 - we get access to it via userFunctionStores __proto__property-the chain 
--This keyword rules are overridden when used with arrow functions, because of when arrow function contents are evaluated.
+- This keyword rules are overridden when used with arrow functions, because of when arrow function contents are evaluated.
