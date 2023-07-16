@@ -12,7 +12,7 @@
   * whether only functions can be referenced on the prototypal reference chain, and a clarification as to whether an Object.create() argument is always the __proto__ property. How to visually see the __proto__ property in the console is briefly covered.
   *  The execution context created when a function called on the prototypal reference chain is diagrammed, and it's demonstrated how the implicit parameter set in the execution context allows the function work with individual objects despite being shared.
 - Question 2:
-* What if we want to confirm our user1 has the property score 
-* we can use the hasOwnProperty method - but where is it ? is it on user 2? 
-* All objects have a__proto__ property by default which defults to linking to a big object -Object.prototype full of (somewhat) useful functions 
+  * What if we want to confirm our user1 has the property score 
+  * we can use the hasOwnProperty method - but where is it ? is it on user 2? 
+  * All objects have a__proto__ property by default which defults to linking to a big object -Object.prototype full of (somewhat) useful functions 
 we get access to it via userFunctionStores __proto__property-the chain 
