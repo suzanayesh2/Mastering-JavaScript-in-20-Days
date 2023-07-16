@@ -7,3 +7,4 @@
 - classes and prototypes are important to learn as a developer, and what will be learned in the upcoming sections. The core idea of development is covered to understand how code should be structured, and how developers write code to be easy to reason about, easy to add new functionality, and efficient. The argument is made that object oriented programming is all of these things.
 - Prototype chain - the feature behind the scenes that enables emulation of OOP but is a compelling tool in itself 
 - The prototype chain, or __proto__ as a way to access functions that were set when Object.create() is used to instantiate an object.
+- In modern JavaScript, the preferred approach is to use classes or constructor functions with the new keyword. This automates the process of creating objects, ensures the prototype chain is set up correctly, and avoids duplicating functions for each object.
