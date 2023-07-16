@@ -17,3 +17,12 @@
   * All objects have a__proto__ property by default which defults to linking to a big object -Object.prototype full of (somewhat) useful functions 
 - we get access to it via userFunctionStores __proto__property-the chain 
 - This keyword rules are overridden when used with arrow functions, because of when arrow function contents are evaluated.
+###### Our code is getting repetitive, we're breaking our DRY principle. And suppose we have millions of users! What could we do?
+- Solution 1. Generate objects using a function:
+Problems: Each time we create a new user we make space in our computer's memory for all our data and functions. But our functions are just copies.
+- Solution 2: Using the prototype chain (The Core Solution):
+All objects have a __ proto __ property by default which defaults to linking to a big object - Object.prototype full of (somewhat) useful functions
+- Solution 3 - Introducing the keyword that automates the hard work: new
+When we call the function that returns an object with new in front we automate 2 things
+Create a new user object
+Return the new user object
