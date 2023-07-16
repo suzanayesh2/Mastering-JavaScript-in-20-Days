@@ -26,3 +26,4 @@ All objects have a __ proto __ property by default which defaults to linking to 
 When we call the function that returns an object with new in front we automate 2 things
 Create a new user object
 Return the new user object
+- Solution 4: The class (syntactic sugar)
