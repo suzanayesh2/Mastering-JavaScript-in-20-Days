@@ -1,6 +1,7 @@
 # DAY3 : Async JavaScript, Promises
 ## Lesson summary :
 
+
 - Promises the most signficate ES6 feature
 -  Async the feature that makes dynamic web app possible the event loop - js triage,
 microtask queue, callback queue and web broweser featiures (APIS) 
@@ -16,6 +17,7 @@ microtask queue, callback queue and web broweser featiures (APIS)
   * Event loop, Callback/Task queue and micro task queue
 - The key features that the browser provides. To interact with the features that the browser offers, JavaScript offers "facade functions" that look like JavaScript, but are actually part of the browser. Examples of these functions include console, fetch, document, and setTimeout.
 
+- By using Promises and the event loop, we can handle asynchronous operations more effectively, ensuring that the thread of execution is not blocked during background web browser work, and we can handle the results or errors in a structured manner once the work is completed.
 
 ### CODE EXRCISES:
 [Pair programming challenges :Asynchronicity](http://csbin.io/async)
