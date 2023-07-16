@@ -109,3 +109,99 @@ func()
 // }
 // everyXsecsForYsecs(theEnd, 2, 20); // should invoke theEnd function every 2 seconds, for 20 seconds): This is the end!
 ```
+### [Learning sprint (1), week (2), day (3) delieverables](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week2-day3-tasks/tasks.md)
+#### Question 1:
+```javascript
+
+const task1 = (cb) => setTimeout(() => {
+  const message = "Task 1 has executed successfully!";
+  cb(message);
+}, 3000);
+
+const task2 = (cb) => setTimeout(() => {
+  const message = "Task 2 has executed successfully!";
+  cb(message);
+}, 0);
+
+const task3 = (cb) => setTimeout(() => {
+  const message = "Task 3 has executed successfully!";
+  cb(message);
+}, 1000);
+
+const task4 = (cb) => setTimeout(() => {
+  const message = "Task 4 has executed successfully!";
+  cb(message);
+}, 2000);
+
+const task5 = (cb) => setTimeout(() => {
+  const message = "Task 5 has executed successfully!";
+  cb(message);
+}, 4000);
+
+const asyncTasks = [task1, task2, task3, task4, task5];
+
+const executeInSequenceWithCBs = (tasks, callback) => {
+  const messages = [];
+  let index = 0;
+
+  const executeTask = () => {
+    if (index < tasks.length) {
+      tasks[index]((message) => {
+        messages.push(message);
+        index++;
+        executeTask();
+      });
+    } else {
+      callback(messages);
+    }
+  };
+
+  return executeTask();
+};
+
+const callback = (messages) => {
+  console.log("Messages:", messages);
+};
+
+executeInSequenceWithCBs(asyncTasks, callback);
+
+```
+#### Question 2:
+```javascript
+const executeInParallelWithPromises = (apis) => {
+  const promises = apis.map(api => fetch(api.apiUrl)
+    .then(response => response.json())
+    .then(data => ({
+      apiName: api.apiName,
+      apiUrl: api.apiUrl,
+      apiData: data
+    }))
+  );
+
+  return Promise.all(promises);
+};
+```
+
+#### Question 3:
+```javascript
+const executeInSequenceWithPromises = (apis) => {
+  let promiseChain = Promise.resolve();
+  const results = [];
+
+  apis.forEach(api => {
+    promiseChain = promiseChain
+      .then(() => fetch(api.apiUrl))
+      .then(response => response.json())
+      .then(data => {
+        results.push({
+          apiName: api.apiName,
+          apiUrl: api.apiUrl,
+          apiData: data
+        });
+      });
+  });
+
+  return promiseChain.then(() => results);
+};
+
+```
