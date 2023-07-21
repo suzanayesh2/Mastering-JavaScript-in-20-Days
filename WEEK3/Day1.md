@@ -25,15 +25,6 @@
 - Kyle Simpson describe why this statement that every thing in js is an object is false
 because most value can be behave as an object so this not makes them to be object.
 - Objects:
-( object
-  function
-  array ) 
+( object, function ,array ) 
 - Not Objects
-  (undefined
-   string
-  number
-   boolean
-   object
-    symbol
-    null
-   bigint (future) ) 
+  (undefined, string, number, boolean, object, symbol, null, bigint (future) ) 
