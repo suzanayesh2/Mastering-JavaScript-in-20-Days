@@ -30,22 +30,26 @@ because most value can be behave as an object so this not makes them to be objec
   (undefined, string, number, boolean, object, symbol, null, bigint (future) )
 
 
-  - Kyle Simpson describe the main different between undefined, undeclared and uninitialized: 
+###### Kyle Simpson describe the main different between undefined, undeclared and uninitialized: 
 
 - Undefined:
-   means there is definitely a variable and at the moment it has no value  refers to a variable that has been declared but not assigned any value.
-  ```javascript
+   means there is definitely a variable and at the moment it has no value and refers to a variable that has been declared but not assigned any value.
+```javascript
 let x; // x is declared but not initialized, so its value is undefined
 console.log(x); // Output: undefined
 ```
-- undeclared 
-means console.log(y); // Throws a ReferenceError: y is not defined (undeclared)
- its never been created in any scope that we have access to 
+- Undeclared 
+means its never been created in any scope that we have access to .
+```javascript
+console.log(y); // Throws a ReferenceError: y is not defined (undeclared)
+```
 
-- uninitialized refers to a variable that has been declared but not assigned any value.
+- Uninitialized
+  refers to a variable that has been declared but not assigned any value.
+```javascript
 let z; // z is declared but not initialized, so its value is undefined
 console.log(z); // Output: undefined
 
 z = 10; // Now z is initialized with a value (10)
 console.log(z); // Output: 10
-
+```
