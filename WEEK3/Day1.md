@@ -89,3 +89,19 @@ function isEmptyValue(value) {
 }
 
 ```
+## Question 4:
+Write a function called `compareObjects` that takes 2 arguments of type `"object"` and compares them. If both arguments are equal, return `true`. If not, return `false`.
+### My Solution :
+
+```javascript
+function compareObjects(input1, input2) {
+    if (typeof input1 === "object" && typeof input === "object") {
+        return false;
+    } else if (typeof input1 !== "object" || typeof input2 !== "object") {
+        return true;
+    } else {
+        return [input1, input2]
+    }
+}
+console.log(compareObjects([3, 43], { "id": 342, "name": "Rami" }));
+```
