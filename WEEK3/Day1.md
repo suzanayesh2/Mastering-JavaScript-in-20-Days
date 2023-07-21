@@ -80,3 +80,12 @@ const checkNaN = (value) => {
   return isNaN(value);
 };
 ```
+## Question 3:
+Write a function called complexCoercion that takes a single argument and checks if its type is primitive, and if so returns a coerced value according to the rules below.
+### My Solution :
+```javascript
+function isEmptyValue(value) {
+  return !Boolean(value);
+}
+
+```
