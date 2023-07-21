@@ -72,3 +72,11 @@ function convertStringToNumber(input) {
   };
 }
 ```
+## Question 2:
+[Q2](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day1-tasks/tasks.md?plain=1)
+### My Solution :
+```javascriipt
+const checkNaN = (value) => {
+  return isNaN(value);
+};
+```
