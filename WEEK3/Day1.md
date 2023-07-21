@@ -53,3 +53,11 @@ console.log(z); // Output: undefined
 z = 10; // Now z is initialized with a value (10)
 console.log(z); // Output: 10
 ```
+# Learning sprint (1), week (3), day (1) delieverables
+
+## Question 1:
+[Q1](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day1-tasks/tasks.md?plain=1)
+### My Solution :
+```javascript
+
+```
