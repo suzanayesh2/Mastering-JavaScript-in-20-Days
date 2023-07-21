@@ -23,4 +23,4 @@
 ## Types:
 ### Lesson Summary:
 - Kyle Simpson describe why this statement that every thing in js is an object is false
-because most value can be behave as an object so this not makes them to be object.
+because most value can be behave as an object so this not makes them to be object, like undefined value .
