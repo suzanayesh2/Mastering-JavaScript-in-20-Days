@@ -61,13 +61,11 @@ console.log(z); // Output: 10
 ```javascript
 function convertStringToNumber(input) {
   if (typeof input === "string") {
-    const num = +input; // Using the unary plus operator to convert the string to a number
-    if (!isNaN(num)) {
-      return num;
+    const number = +input; 
+    if (!isNaN(number)) {
+      return number;
     }
   }
-
-  // If the input is not a string or cannot be converted to a number, return an object
   return {
     value: input,
     type: typeof input,
