@@ -103,5 +103,30 @@ function compareObjects(input1, input2) {
         return [input1, input2]
     }
 }
-console.log(compareObjects([3, 43], { "id": 342, "name": "Rami" }));
+console.log(compareObjects("suzan",[9,0]);
+```
+
+## Question 5: 
+
+Write a function called `complexCoercion` that takes a single argument and
+checks if its type is primitive, and if so returns a coerced value according to
+the rules below.
+
+### My Solution :
+
+```javascript
+const complexCoercion = (input) => {
+  if (typeof input === "number") {
+    return Boolean(input.toString()); 
+  } else if (typeof input === "string") {
+    return Boolean(input);
+  } else if (input === null || input === undefined) {
+    return false;
+  } else {
+    return input; // Return the input for non-primitive types
+  }
+};
+console.log(complexCoercion(11)); 
+console.log(complexCoercion("Like")); 
+
 ```
