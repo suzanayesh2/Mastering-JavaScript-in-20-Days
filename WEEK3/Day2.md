@@ -1,1 +1,7 @@
 # Day2: Static typing And Scope
+## Static typing
+### Lessons Summary:
+  - Benefits of using TypeScript and Flow for type checking: 
+    1. Catch type-related mistakes
+    2. Communicate type intent
+    3. Provide IDE feedback
