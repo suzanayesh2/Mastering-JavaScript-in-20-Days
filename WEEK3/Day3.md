@@ -42,3 +42,13 @@ By naming your functions, you make your code more debuggable  ,you make your sta
 #### 3- More self-documenting code
 when you read an anonymous function and try to understand it 
 
+### Arrow Function 
+Arrow functions were introduced in ECMAScript 6 (ES6) allow you to write functions in a short manner. But arrow functions cannot be declared
+
+```javascript
+var ids = people.map(person => person.id);
+
+var ids = people.map(function getId(person){
+return person.id;});
+```
+
