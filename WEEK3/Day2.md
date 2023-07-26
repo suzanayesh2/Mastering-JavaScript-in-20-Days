@@ -55,7 +55,7 @@ teacher;
 topic;
 ```
 - nested scope:
-  ```javascript
+```javascript
 var teacher = "Kyle" ;
 function otherClass()
 {
