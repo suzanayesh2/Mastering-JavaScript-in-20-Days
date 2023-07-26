@@ -62,3 +62,4 @@ const multiplyAndAdd = (a, b, c) => {
 console.log(multiplyAndAdd(2, 3, 4)); // Output: 10
 
 ```
+## Advanced Scope
