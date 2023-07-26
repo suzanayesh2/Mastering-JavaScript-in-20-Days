@@ -127,3 +127,35 @@ myFunction();
 
 console.log(x); // Error: 'x' is not defined because it is not accessible outside the function
 ```
+- IIFE stands for Immediately Invoked Function Expression. It is a design pattern in JavaScript that involves defining a function expression and immediately invoking it. The primary purpose of an IIFE is to create a new scope for variables and avoid polluting the global scope.
+```javascript
+
+(function() {
+  // Your code here
+})();
+```
+```javascript
+
+var teacher ="Kyle";
+
+( function otherTeacher(){
+var teacher ="Suzy";
+console.log(teacher);//Suzy
+})();
+otherTeacher();
+```
+console.log(teacher);//Kyle
+- Block scoping is a programming language feature that allows variables to have a scope limited to the block in which they are declared. A block is a set of statements enclosed within curly braces {}. Variables declared with block scoping are only accessible within the block they are defined in, and they are not visible outside of it.
+- function exampleFunction() {
+
+```javascript
+
+  if (true) {
+    let x = 10; // 'x' is block-scoped to the 'if' block
+    console.log(x); // Output: 10
+  }
+
+  // 'x' is not accessible here; it is out of scope
+  // console.log(x); // Error: 'x' is not defined
+}
+```
