@@ -112,5 +112,18 @@ function bar() {
   foo();
 }
 
+
 bar(); // Output depends on the value of 'x' in the caller's context.
+```
+- Function scope is a concept in programming languages where variables declared inside a function are only accessible within the function's block or body and not visible outside of it. This means that variables defined within a function are "scoped" to that specific function and are not accessible from other parts of the code, including other functions or the global scope.
+```javascript
+
+function myFunction() {
+  const x = 10; // 'x' is scoped to the function myFunction
+  console.log(x); // Output: 10
+}
+
+myFunction();
+
+console.log(x); // Error: 'x' is not defined because it is not accessible outside the function
 ```
