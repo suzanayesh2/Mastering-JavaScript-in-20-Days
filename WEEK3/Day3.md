@@ -86,3 +86,17 @@ function outer() {
 
 outer();
 ```
+- Dynamic scope is a scope resolution mechanism where the scope of a variable is determined based on the call stack during runtime (i.e., the chain of function calls that led to the current point in the code).
+```javascript
+
+function foo() {
+  console.log(x); // The value of 'x' is determined by the caller of foo(), not where foo() is defined.
+}
+
+function bar() {
+  const x = 5;
+  foo();
+}
+
+bar(); // Output depends on the value of 'x' in the caller's context.
+```
