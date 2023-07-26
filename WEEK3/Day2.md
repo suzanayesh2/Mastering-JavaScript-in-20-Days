@@ -30,7 +30,7 @@
   * Modules
 
  
-#### Globla scope : 
+#### Globla Scope : 
 ```javascript
 var teacher = "Kyle" ;
 function otherClass()
@@ -54,7 +54,7 @@ Console.log("Welcome");
 teacher;
 topic;
 ```
-- nested scope:
+#### Nested Scope:
 ```javascript
 var teacher = "Kyle" ;
 function otherClass()
@@ -75,4 +75,57 @@ ask("????);
 - The difference between a variable that is undefined versus one that is undeclared :
    * undefined means a varible exists  and at the moment doent have a value
    * undeclared : never formally declared in any scope that we have accessed to 
+##### Examples from ChatGPT:
+ #### Hositing Scope
+```javascript
+// Example of hoisting with variable declaration
+console.log(x); // Output: undefined
+var x = 10;
 
+// Example of hoisting with function declaration
+foo(); // Output: "Hello, World!"
+function foo() {
+  console.log("Hello, World!");
+}
+
+```
+#### Clouser Scope
+```javascript
+function outerFunction() {
+  var count = 0;
+  
+  function innerFunction() {
+    count++;
+    console.log(count);
+  }
+  
+  return innerFunction;
+}
+
+var closureExample = outerFunction();
+closureExample(); // Output: 1
+closureExample(); // Output: 2
+closureExample(); // Output: 3
+
+```
+#### Module Scope
+```javascript
+var myModule = (function() {
+  var privateVariable = "I am private!";
+  
+  function privateFunction() {
+    console.log(privateVariable);
+  }
+  
+  return {
+    publicFunction: function() {
+      console.log("I am public!");
+    }
+  };
+})();
+
+myModule.publicFunction(); // Output: "I am public!"
+myModule.privateFunction(); // Error: privateFunction is not defined
+console.log(myModule.privateVariable); // Error: privateVariable is not defined
+
+```
