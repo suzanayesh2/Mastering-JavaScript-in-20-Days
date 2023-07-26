@@ -17,7 +17,7 @@ console.log(teacher);
 console.log(myTeacher);
 console.log(anotherteacher);//reference error 
 ```
-- Named Function Expression : 
+### Named Function Expression : 
 ```javascript
 var clickHandler =function(){...};
 var clickHandler =function keyHandler(){...};
@@ -31,3 +31,14 @@ function greet(name) {
 }
 
 ```
+#### 1- Reliable function self-reference 
+- Prefer a name function expression beacuse the name produces or creates a relible self-reference to the function from inside of itself .
+   * It useful if you are going to make the function recursive.
+   * It useful if that function is an event handler of some sort and it needs to reference itself to unbind itself
+   * It useful if tou need to access any properties on that function object such as its link or its name or other thing of that sort 
+#### 2- more debuggable stack traces
+By naming your functions, you make your code more debuggable  ,you make your stack traces more debuggable , been able to tell the source of the bug simply by looking at the names and the order functions , what didnt get called and what did get called 
+
+#### 3- More self-documenting code
+when you read an anonymous function and try to understand it 
+
