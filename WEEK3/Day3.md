@@ -64,6 +64,16 @@ console.log(multiplyAndAdd(2, 3, 4)); // Output: 10
 ```
 ## Advanced Scope
  - Lexical scope, also known as static scope, is a scope resolution mechanism where the scope of a variable is determined based on its location in the source code (i.e., the placement of the variable declaration).
+````javascript
+var teacher ="kyle";
+function otherClass(){
+var teacher ="Suzy";
+function ask(question){
+console.log(teacher,question);
+
+}ask("why");
+}
+```
 ```javascript
 function outer() {
   const x = 10;
