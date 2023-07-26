@@ -52,3 +52,12 @@ var ids = people.map(function getId(person){
 return person.id;});
 ```
 
+```javascript
+const multiplyAndAdd = (a, b, c) => {
+  const product = a * b;
+  return product + c;
+};
+
+console.log(multiplyAndAdd(2, 3, 4)); // Output: 10
+
+```
