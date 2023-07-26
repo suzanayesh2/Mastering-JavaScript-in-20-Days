@@ -17,3 +17,21 @@ const teachers=["Suzy",""];
  teacher[1]="Brian";//ok
 
 ```
+- Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their containing scope during the compilation phase before the code is executed. This means that you can use variables and functions before they are actually declared in the code.
+```javascript
+console.log(x); // Output: undefined
+var x = 5;
+
+
+```
+```javascript
+
+foo(); // Output: "Hello, I am foo."
+function foo() {
+  console.log("Hello, I am foo.");
+}
+```
+```javascript
+name;
+let name ="Suzy";//ok
+```
