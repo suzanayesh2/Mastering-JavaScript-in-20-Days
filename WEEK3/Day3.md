@@ -51,7 +51,7 @@ var ids = people.map(person => person.id);
 var ids = people.map(function getId(person){
 return person.id;});
 ```
-* another one from ChatGPT
+* another one from ChatGPT 
 
 ```javascript
 const multiplyAndAdd = (a, b, c) => {
