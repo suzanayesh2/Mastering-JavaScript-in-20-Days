@@ -38,6 +38,8 @@ let name ="Suzy";//ok
 ## Closure
 - Allows functions to maintain access to variables from their outer (enclosing) scope even after the outer function has finished executing. 
 - A Closure is a function bundled together with its lexical environment (the set of variables and their values) at the time of its creation.
+- Closure is when a function “remembers” its lexical scope even when the function is executed outside that lexical scope.
+- Modules encapsulate data and behavior (methods) together. The state (data) of a module is held by its methods via closure.
 ```javascript
 function outerFunction() {
   let outerVariable = 10;
