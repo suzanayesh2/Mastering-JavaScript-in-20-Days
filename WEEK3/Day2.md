@@ -21,10 +21,58 @@
 - Flow : is a static type checker developed by Facebook. It also introduces optional static typing to JavaScript, but unlike TypeScript, it requires explicit annotations using special comments (e.g., // @flow) to enable type checking on a per-file basis.
 - TypeScript : is a superset of JavaScript developed by Microsoft. It adds optional static typing to JavaScript, allowing developers to define types for variables, function parameters, return values, and more.
 
-## Scope
+## Scope :where to look for things
 ### Lessons Summary:
 - Scope: where to look for things
   * Nested Scope
   * Hoisting
   * Closure
   * Modules
+
+ 
+#### Globla scope : 
+```javascript
+var teacher = "Kyle" ;
+function otherClass()
+{
+var teacher ="suzy";
+consol.log("WElcome");
+}
+otherClass();//Welcome
+```
+ - compilation(output) and execution(code)
+ -Execution :
+```javascript
+1- var teacher ="Kyle"
+2- function otherClass(){
+teacher="Suzy";
+5- topic="React"
+Console.log("Welcome");
+
+}
+3- otherClass();//welcome
+teacher;
+topic;
+```
+- nested scope:
+  ```javascript
+var teacher = "Kyle" ;
+function otherClass()
+{
+var teacher ="suzy";
+function ask(question){
+console.log(teacher,question);
+
+}
+ask("why");
+
+}
+
+otherClass();  //Suzy Why ?
+ask("????);
+```
+
+- The difference between a variable that is undefined versus one that is undeclared :
+   * undefined means a varible exists  and at the moment doent have a value
+   * undeclared : never formally declared in any scope that we have accessed to 
+
