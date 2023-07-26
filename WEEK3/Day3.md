@@ -1,1 +1,1 @@
-Day 3 : Scope, Function expressions and Advanced scope
+# Day 3 : Scope, Function expressions and Advanced scope
