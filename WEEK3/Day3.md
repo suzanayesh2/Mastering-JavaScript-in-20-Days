@@ -145,7 +145,7 @@ console.log(teacher);//Suzy
 otherTeacher();
 console.log(teacher);//Kyle
 ```
-- Block scoping is a programming language feature that allows variables to have a scope limited to the block in which they are declared. A block is a set of statements enclosed within curly braces {}. Variables declared with block scoping are only accessible within the block they are defined in, and they are not visible outside of it.
+- Block scoping (Encapsulation) is a programming language feature that allows variables to have a scope limited to the block in which they are declared. A block is a set of statements enclosed within curly braces {}. Variables declared with block scoping are only accessible within the block they are defined in, and they are not visible outside of it.
 - function exampleFunction() {
 
 ```javascript
