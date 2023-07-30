@@ -149,9 +149,28 @@ testScope1();
 
 ```
 B)
-1
-Undefined
+1, 
+Undefined, 
 ReferenceError
 
 
 Explanation: In the testScope1 function, we have a block of code inside the if (true) statement. Within that block, we declared three variables: var a, let b, and const c. The has function-level scope, while let and const have block-level scope. so They are only accessible inside the block where they are declared. So, when we try to access b and c outside the block, we will get a ReferenceError because they are not defined in that scope.
+
+### Q2:
+
+A) undefined, ReferenceError 
+Explanation:
+
+In the testScope2 function, we have the same block of code inside the if (true), Since var declarations are hoisted to the top of their scope, the variable a is hoisted to the top of the function, but its value is undefined because the assignment var a = 1 has not been executed yet. So, when we try to print a, we get undefined.b and c are declared using let and const and they have a block-level scope , They are not hoisted to the top of the function, and they are not defined before their declaration
+
+### Q3:
+C) [ 36, 100, 45 ] | [ 1, 2, 3 ] | [ 1, 100, 45 ]
+
+Explanation:
+
+In the testScope3 function, we have two blocks of code:
+- one before the if (true) statement
+- one inside the if block.
+- In the first block, we declare three variables: var a, let b, and const c. Since the block has access to its own variables, we get the values [36, 100, 45] printed.
+- In the second block inside the if statement, we declare new variables var a, let b, and const c. The declarations create new variables in the scope of the block, and they do not affect the outer scope variables with the same names.
+
