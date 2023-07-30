@@ -129,3 +129,29 @@ myModule.privateFunction(); // Error: privateFunction is not defined
 console.log(myModule.privateVariable); // Error: privateVariable is not defined
 
 ```
+## Coding Exersice
+[Questions](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day2-tasks/tasks.md)
+### Q1
+#### My Solution
+```javascript
+function testScope1() {
+  if (true) {
+    var a = 1;
+    let b = 2;
+    const c = 3;
+  }
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+
+testScope1();
+
+```
+B)
+1
+Undefined
+ReferenceError
+
+
+Explanation: In the testScope1 function, we have a block of code inside the if (true) statement. Within that block, we declared three variables: var a, let b, and const c. The has function-level scope, while let and const have block-level scope. so They are only accessible inside the block where they are declared. So, when we try to access b and c outside the block, we will get a ReferenceError because they are not defined in that scope.
