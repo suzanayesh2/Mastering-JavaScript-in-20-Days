@@ -55,3 +55,111 @@ const closureFunc = outerFunction();
 closureFunc(); // Output: 10
 
 ```
+## Coding Exersice
+[Questions](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day4-tasks/tasks.md)
+### Q1
+#### My Solution
+To fix this, we need to use the let keyword instead of var to declare the loop variable i. When using let, the loop variable will have block-level scope, and each iteration will create a new lexical environment for i, which will be captured correctly by the setTimeout callback.
+```javascript
+for (let i = 0; i < 5; i++) {
+    setTimeout(function() {
+      console.log("value of [i] is: ", i);
+    }, 100);
+}
+"value of [i] is: " 0
+"value of [i] is: " 1
+"value of [i] is: " 2
+"value of [i] is: " 3
+"value of [i] is: " 4
+
+```
+### Q2:
+To fix this, we need to move the array variable outside of the loop, so it retains its value across iterations and accumulates the values of i on each iteration
+```javascript
+let array = []; // Move the array outside of the loop
+for (let i = 0; i < 5; i++) {
+   array.push(i); // Push the value of i to the array on each iteration
+   console.log("Current array is: ", array);
+}
+"Current array is: [ 0 ]"
+"Current array is: [ 0, 1 ]"
+"Current array is: [ 0, 1, 2 ]"
+"Current array is: [ 0, 1, 2, 3 ]"
+"Current array is: [ 0, 1, 2, 3, 4 ]"
+
+```
+
+### Q3:
+To fix this, we can use the let keyword instead of var to declare the loop variable i. When using let, the loop variable will have block-level scope, and each iteration will create a new lexical environment for i, which will be captured correctly by the arrow functions.
+```javascript
+let functions = [];
+
+for (let i = 0; i < 5; i++) {
+  functions.push(() => {
+    console.log("Current value of i is:", i);
+  });
+}
+
+functions.forEach((func) => func());
+"Current value of i is: 0"
+"Current value of i is: 1"
+"Current value of i is: 2"
+"Current value of i is: 3"
+"Current value of i is: 4"
+
+```
+### Q4:
+```javascript
+function privateCounter() {
+  let count = 0; // Private variable within the closure
+
+  return {
+    increment: function() {
+      count++;
+    },
+    getCount: function() {
+      return count;
+    }
+  };
+}
+
+// Example usage:
+const counter = privateCounter();
+counter.increment();
+counter.increment();
+console.log(counter.getCount()); 
+
+```
+### Q5:
+```javascript
+function generateFibonacci(count) {
+  let currentCount = 0;
+  let fibonacciNumbers = [];
+
+  function fibonacci(n) {
+    if (n <= 1) {
+      return n;
+    } else {
+      return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+  }
+
+  return function() {
+    if (currentCount < count) {
+      const nextFibonacci = fibonacci(currentCount);
+      fibonacciNumbers.push(nextFibonacci);
+      currentCount++;
+      return nextFibonacci;
+    } else {
+      return null;
+    }
+  };
+}
+
+// Example usage:
+const getNextFibonacci = generateFibonacci(10);
+for (let i = 0; i < 10; i++) {
+  console.log(getNextFibonacci());
+}
+
+```
