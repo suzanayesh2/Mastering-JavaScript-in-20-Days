@@ -168,4 +168,82 @@ console.log(teacher);//Suzy
 }
 console.log(teacher);//kyle
 
+## Coding Exersice
+[Questions](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day3-tasks/tasks.md)
+### Q1
+#### My Solution
+
+```javascript
+
+const exampleNormalFunc1 = (a, b, c) => {
+  return a * (b + c);
+}
+
+const exampleNormalFunc2 = (x, y) => {
+  return x * y;
+}
+
+const exampleNormalFunc3 = (string) => {
+  return string + " " + string + " " + string + "!";
+}
+
+
+const arrowHOF = (normalFunc) => {
+  // write your code here;
+ return (...args) => {
+    return (n = 1) => {
+      let result = [];
+      for(let i = 0; i < n; i++) {
+        result.push(normalFunc(...args));
+      }
+      return result;
+    }
+  }
+}
+
+const hofNormalFunc1 = arrowHOF(exampleNormalFunc1);
+const hofNormalFunc2 = arrowHOF(exampleNormalFunc2);
+const hofNormalFunc3 = arrowHOF(exampleNormalFunc3);
+
+console.log(hofNormalFunc1(3, 4, 5)(2)); // logs 60 twice
+console.log(hofNormalFunc2(20, 35))(4); // logs 700 four times
+console.log(hofNormalFunc3("Meow")()); // logs "Meow Meow Meow!" once
+
 ```
+### Q2:
+```javascript
+
+// Example object
+const obj = {
+  name: 'John',
+  greet: function (greeting) {
+    console.log(`${greeting}, ${this.name}!`);
+  }
+};
+
+const preserveThis = (func) => {
+  // write your code here;
+  return func;
+}
+
+// Wrap the greet function using preserveThis
+const preservedGreet = preserveThis(obj.greet);
+
+// Call the wrapped function as a method of the object
+preservedGreet('Hello'); // Output: "Hello, John!"
+const preserveThis = (func) => {
+  return (...args) => {
+    return func.apply(func.__this || this, args);
+  };
+};
+
+
+```
+### Q3:
+- Ex1:
+Output = 10
+variable x declared inside the outer1 function using var .The inner1 function is defined inside outer1 and is able to access the variable x from its outer scope. When inner1 is called, it logs the value of x, which is 10. This is because the inner1 function has access to the variables in the outer scope (closure) .
+- Ex2:
+Output = 20
+There are two separate variables named x , When the inner2 function is called, it logs the value of the inner x, which is 20. This is because the inner variable x shadows the outer variable x, and the inner function prefers the variable from its own scope.
+Since the inner2 function only has access to its own x variable and not the outer x, it logs 20.
